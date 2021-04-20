@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<header>
+		<h1 id="title">Survey Form</h1>
+		<p id="description">Thank you for helping us improve the platform.</p>
+	</header>
+
+  <div class="contaier">
+
+    
+    <form id="survey-form">
+      <div class="col" id="col-1">
+        
+          <label id="name-label">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" placeholder="A #e2dddd placeholder text" required>
+          <label id="email-label">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+          <label id="number-label">Age:</label>
+          <input type="number" id="number" name="number" min="10" max="80" placeholder="Age" required>
+
+        <div class="form-group">
+          <p>Which option describes your role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+           <option disabled selected value>Select current role</option>
+           <option value="student">Student</option>
+           <option value="job">Full Time Job</option>
+           <option value="learner">Full Time Learner</option>
+           <option value="preferNo">Prefer not to say</option>
+           <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="bottom-radio">
+          <p>Would you recommend our page to your friends?</p>
+          <input type="radio" id="Definitely" name="gender" value="Definitely">
+          <label name="Definitely">Definitely</label><br>
+          <input type="radio" id="Maybe" name="gender" value="Maybe">
+          <label name="Maybe">Maybe</label><br>
+          <input type="radio" id="Not sure" name="gender" value="Not sure">
+          <label name="Not sure">Not sure</label><br>
+        </div>
+        <div class= "form-group2">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+           <option disabled selected value>Select an option</option>
+           <option value="challenges">Challenges</option>
+           <option value="projects">Projects</option>
+           <option value="community">Community</option>
+           <option value="openSource">Open Source</option>
+          </select>
+        </div>
+      </div> 
+
+      <div class="col" id="col-2">
+        <div class="checkbox">
+          <p>What would you like us to improve?</p>
+           <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label><br>
+           <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end-projects</label><br>
+           <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data visualization</label><br>
+           <label><input name="prefer" value="Challenges" type="checkbox" class="input-checkbox">Challenges</label><br>
+           <label><input name="prefer" value="Open Source Community" type="checkbox" class="input-checkbox">Open Source Community</label><br>
+           <label><input name="prefer" value="Gitter help rooms" type="checkbox" class="input-checkbox">Gitter help rooms</label><br>
+        </div>
+        <div class="textarea">
+          <p>Add a comment or suggestion.</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here."></textarea>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+        <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319   1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z"/></svg>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html> 
